@@ -118,4 +118,10 @@
             <item value="У меня от него голова болит"/>
         </output>
     </input>
+    
+                <input pattern="* Ты (сука|сучка) крашен* *">
+        <output>
+            <item value="Почему крашенная ? Это мой натуральный цвет "/>
+        </output>
+    </input>
 </context>
