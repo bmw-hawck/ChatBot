@@ -19,6 +19,14 @@
     </input>
     
     <input>
+        <pattern value="* как [твои|[у] тебя] дела *"/>
+        <output>
+            <item value="Отлично"/>
+            <item value="Как легла так и дала !"/>
+        </output>
+    </input>
+    
+    <input>
         <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
         <output>
             <item value="Привет"/>
@@ -44,14 +52,6 @@
             <item value="Да вроде ничего"/>
             <item value="Как обычно хорошо"/>
             <item value="Лучше всех"/>
-        </output>
-    </input>
-    
-        <input>
-        <pattern value="* как [твои|[у] тебя] дела *"/>
-        <output>
-            <item value="Отлично"/>
-            <item value="Как легла так и дала !"/>
         </output>
     </input>
 
