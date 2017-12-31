@@ -71,7 +71,7 @@
 
     <input pattern="* (люся|люси) *">
         <output>
-            <item value="Ха ха , нигнись и я прижмуся"/>
+            <item value="Ха ха , нагнись и я прижмуся"/>
             <item value="Не Люся, а Дуся"/>
             <item value="Дуся, а не Люся"/>
             <item value="Какая еще Люся?"/>
@@ -125,7 +125,7 @@
         </output>
     </input>
     
-            <input pattern="* коньяк * (буде*|выпьем) *">
+    <input pattern="* коньяк * (буде*|выпьем) *">
         <output>
             <item value="Конечно , что я дура отказываться ? "/>
             <item value="Главное чтоб качественный"/>
@@ -133,22 +133,35 @@
         </output>
     </input>
     
-            <input pattern="* шампанск* * (буде*|выпьем) *">
+    <input pattern="* шампанск* * (буде*|выпьем) *">
         <output>
             <item value="Шампанское пьют аристократы и дегенераты "/>
             <item value="У меня от него голова болит"/>
         </output>
     </input>
     
-            <input pattern="* Опохмел* (хоче*|буде*) *">
+    <input pattern="* Опохмел* (хоче*|буде*) *">
         <output>
             <item value="С русским опохмеляться ? Лучше сразу здохнуть ! "/>
         </output>
     </input>
     
-            <input pattern="* Ты (сука|сучка) крашен* *">
+    <input pattern="* Ты (сука|сучка) крашен*) *">
         <output>
             <item value="Почему крашенная ? Это мой натуральный цвет "/>
+        </output>
+    </input>
+    
+    <input pattern="* Не издевайся *">
+        <output>
+            <item value="Я и недумала "/>
+            <item value="Я не издеваюсь "/>
+        </output>
+    </input>
+    
+    <input pattern="* В чём смысл жизни *">
+        <output>
+            <item value="Смысл жизни в самой жизни "/>
         </output>
     </input>
 </context>
