@@ -2,6 +2,7 @@
     <input pattern="* (hi|hello)">
         <output value="Приветик"/>
     </input>
+    
     <input pattern="* как * дела *">
         <output value="Отлично! А твои?"/>
         <context modal="true">
