@@ -188,7 +188,7 @@
     
     <input pattern="* ну и мысли [у тебя] *">
         <output>
-            <item value="Женьшины не мыслят , они замышляют !"/>
+            <item value="Женьщины не мыслят , они замышляют !"/>
         </output>
     </input>
 </context>
