@@ -20,6 +20,7 @@
 
     <input>
         <pattern value="repeat([дуся|всем] (привет|здравствуй*|hi|hello) [дуся])"/>
+        
         <output>
             <item value="Приветик"/>
             <item value="Привет"/>
