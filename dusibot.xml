@@ -3,7 +3,7 @@
         <output value="Приветик"/>
     </input>
     
-    <input pattern="* как * дела *">
+    <input pattern="* как [твои|[у] тебя] дела *">
         <output value="Отлично! А твои?"/>
         <context modal="true">
             <input pattern="* (хорош*|отличн*|прекрасн*|нормальн*) *">
