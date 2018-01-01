@@ -4,8 +4,10 @@
     </input>
     
     <input pattern="* как * дела *">
-        <output value="Отлично! А твои?"/>
-        <output value="Как легла так и дала! А твои?"/>
+      <output>
+        <item value="Отлично! А твои?"/>
+        <item value="Как легла так и дала! А твои?"/>
+      </output>
         <context modal="true">
             <input pattern="* (хорош*|отличн*|прекрасн*|нормальн*) *">
                 <output>
