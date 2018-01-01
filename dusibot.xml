@@ -5,7 +5,7 @@
         <item value="Отлично! А твои?"/>
               </output>
         <context modal="true">
-            <input pattern="* (хорош*|отличн*|прекрасн*|нормальн*) *">
+            <input pattern="* (ничего|хорош*|отличн*|прекрасн*|нормальн*) *">
                 <output>
                     <item value="Это просто замечательно!"/>
                     <item value="Здорово!"/>
