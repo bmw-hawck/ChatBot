@@ -1,8 +1,4 @@
-<context>
-    <input pattern="* (hi|hello)">
-        <output value="Приветик"/>
-    </input>
-    
+<context>    
     <input pattern="* как [твои|[у] тебя] дела *">
              <output>
         <item value="Как легла так и дала! А твои?"/>
@@ -22,8 +18,9 @@
     </input>
     
     <input>
-        <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
+        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
         <output>
+            <item value="Приветик"/>
             <item value="Привет"/>
             <item value="Привет привет"/>
             <item value="Здравствуйте"/>
