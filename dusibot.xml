@@ -1,6 +1,6 @@
 <context>
     <input>
-     <input pattern="* как [твои|[у] тебя] дела *"/>
+      <input pattern="* как [твои|[у] тебя] дела *"/>
         <item value="Как легла так и дала , А твои?"/>
         <item value="Отлично! А твои?"/>
         <context modal="true">
