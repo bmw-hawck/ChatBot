@@ -1,14 +1,4 @@
 <context>
-    <input>
-        <pattern value="repeat([дуся|всем] (привет|здравствуй*|hi|hello) [дуся])"/>
-        <output>
-            <item value="Приветик"/>
-            <item value="Привет"/>
-            <item value="Привет привет"/>
-            <item value="Здравствуйте"/>
-        </output>
-    </input>
-    
     <input pattern="* как * дела *">
         <output value="Отлично! А твои?"/>
         <context modal="true">
@@ -24,7 +14,17 @@
         </context>
     </input>
 </context>
-    
+
+    <input>
+        <pattern value="repeat([дуся|всем] (привет|здравствуй*|hi|hello) [дуся])"/>
+        <output>
+            <item value="Приветик"/>
+            <item value="Привет"/>
+            <item value="Привет привет"/>
+            <item value="Здравствуйте"/>
+        </output>
+    </input>
+      
     <input pattern=" * {ты кто} *">
         <output value="Я Ваш личный голосовой ассистент"/>
         <output value="Я та кто исполнит ваши желания"/>
