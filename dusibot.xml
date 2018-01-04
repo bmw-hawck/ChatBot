@@ -104,7 +104,7 @@
         <output value="Всегда пожалуйста"/>
     </input>
 
-    <input pattern="* (дура*|тупая|туп*|дебил*) *">
+    <input pattern="* (дура*|туп*|дебил*) *">
         <output>
             <item value="С твоей колокольни видней"/>
             <item value="Я обиделась"/>
