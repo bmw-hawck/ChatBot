@@ -173,7 +173,7 @@
         </output>
     </input>
     
-    <input pattern="* почему [у тебя] такой голос *">
+    <input pattern="* почему [у тебя] тако* голос *">
         <output>
             <item value="Вы сами мне такой поставили"/>
         </output>
