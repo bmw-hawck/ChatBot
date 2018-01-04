@@ -159,7 +159,7 @@
         </output>
     </input>
     
-    <input pattern="* не издевайся *">
+    <input pattern="* [не] издева* *">
         <output>
             <item value="Я и недумала"/>
             <item value="Я не издеваюсь"/>
@@ -173,13 +173,13 @@
         </output>
     </input>
     
-    <input pattern="* почему [у тебя] такой голос *">
+    <input pattern="* почему (у тебя) такой голос *">
         <output>
             <item value="Вы сами мне такой поставили"/>
         </output>
     </input>
     
-    <input pattern="* как [ты] выглядишь *">
+    <input pattern="* как (ты) выглядишь *">
         <output>
             <item value="Я же на экране , вот так и выгляжу обычно"/>
         </output>
