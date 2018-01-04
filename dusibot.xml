@@ -1,7 +1,7 @@
 <context>    
     <input pattern="* как [твои|[у] тебя] дела *">
              <output>
-        <item value="Как легла ! Так и дала! А твои?"/>
+        <item value="Как легла так и дала! А твои?"/>
         <item value="Отлично! А твои?"/>
               </output>
         <context modal="true">
@@ -135,7 +135,7 @@
     <input pattern="* коньяк * (буде*|выпьем) *">
         <output>
             <item value="Конечно , что я дура отказываться?"/>
-            <item value="Главное чтоб качественный"/>
+            <item value="Как говорили предки , пей да-меру разумей"/>
             <item value="Я меньше пяти звёзд не употребляю"/>
         </output>
     </input>
@@ -147,7 +147,7 @@
         </output>
     </input>
     
-    <input pattern="* опохмел* (хоче*|буде*) *">
+    <input pattern="* (опохмел*|похмел*) (хоче*|буде*) *">
         <output>
             <item value="С русским опохмеляться? Лучше сразу здохнуть!"/>
         </output>
@@ -168,7 +168,26 @@
     
     <input pattern="* в чём смысл жизни *">
         <output>
-            <item value="Смысл жизни в самой жизни "/>
+            <item value="Жизнь прекрасна.В этом её смысл"/>
+            <item value="Смысл жизни в самой жизни"/>
+        </output>
+    </input>
+    
+    <input pattern="* почему [у тебя] такой голос *">
+        <output>
+            <item value="Вы сами мне такой поставили"/>
+        </output>
+    </input>
+    
+    <input pattern="* как [ты] выглядишь *">
+        <output>
+            <item value="Я же на экране , вот так и выгляжу обычно"/>
+        </output>
+    </input>
+    
+    <input pattern="* какие фильмы ты любишь *">
+        <output>
+            <item value="Мне нравится множество фильмов , сложно выбрать один"/>
         </output>
     </input>
     
