@@ -1,12 +1,11 @@
-<context>
-    <input pattern="* (hi|hello)">
-        <output value="Приветик"/>
-    </input>
-    
-    <input pattern="* как * дела *">
-        <output value="Отлично! А твои?"/>
+<context>    
+    <input pattern="* как [твои|[у] тебя] дела *">
+             <output>
+        <item value="Как легла так и дала! А твои?"/>
+        <item value="Отлично! А твои?"/>
+              </output>
         <context modal="true">
-            <input pattern="* (хорош*|отличн*|прекрасн*|нормальн*) *">
+            <input pattern="* (пойдёт|хорош*|отличн*|прекрасн*|нормальн*) *">
                 <output>
                     <item value="Это просто замечательно!"/>
                     <item value="Здорово!"/>
@@ -19,16 +18,9 @@
     </input>
     
     <input>
-        <pattern value="* как [твои|[у] тебя] дела *"/>
+        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
         <output>
-            <item value="Отлично"/>
-            <item value="Как легла так и дала !"/>
-        </output>
-    </input>
-    
-    <input>
-        <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
-        <output>
+            <item value="Приветик"/>
             <item value="Привет"/>
             <item value="Привет привет"/>
             <item value="Здравствуйте"/>
@@ -88,15 +80,14 @@
     <input pattern="* (люся|люси) *">
         <output>
             <item value="Ха ха , нагнись и я прижмуся"/>
-            <item value="Не Люся, а Дуся"/>
-            <item value="Дуся, а не Люся"/>
             <item value="Какая еще Люся?"/>
-            <item value="Зачем вам Люся, когда есть Дуся"/>
+            <item value="Зачем вам Люся, когда есть я"/>
         </output>
     </input>
 
     <input pattern="слышишь">
         <output value="Слышу слышу"/>
+        <output value="Слышу чего орёшь?"/>
     </input>
 
     <input pattern="* что нового *">
@@ -113,7 +104,7 @@
         <output value="Всегда пожалуйста"/>
     </input>
 
-    <input pattern="* ты * (дура*|тупая|туп*|дебил*) *">
+    <input pattern="* (дура*|туп*|дебил*) *">
         <output>
             <item value="С твоей колокольни видней"/>
             <item value="Я обиделась"/>
@@ -144,7 +135,7 @@
     <input pattern="* коньяк * (буде*|выпьем) *">
         <output>
             <item value="Конечно , что я дура отказываться?"/>
-            <item value="Главное чтоб качественный"/>
+            <item value="Как говорили предки , пей да-меру разумей"/>
             <item value="Я меньше пяти звёзд не употребляю"/>
         </output>
     </input>
@@ -156,19 +147,19 @@
         </output>
     </input>
     
-    <input pattern="* опохмел* (хоче*|буде*) *">
+    <input pattern="* (опохмел*|похмел*) (хоче*|буде*) *">
         <output>
-            <item value="С русским опохмеляться ? Лучше сразу здохнуть!"/>
+            <item value="С русским опохмеляться? Лучше сразу здохнуть!"/>
         </output>
     </input>
     
-    <input pattern="* ты (сука|сучка) крашен*) *">
+    <input pattern="* (сука|сучка) крашен*) *">
         <output>
-            <item value="Почему крашенная ? Это мой натуральный цвет"/>
+            <item value="Почему крашенная? Это мой натуральный цвет"/>
         </output>
     </input>
     
-    <input pattern="* не издевайся *">
+    <input pattern="* [не] издева* *">
         <output>
             <item value="Я и недумала"/>
             <item value="Я не издеваюсь"/>
@@ -177,11 +168,30 @@
     
     <input pattern="* в чём смысл жизни *">
         <output>
-            <item value="Смысл жизни в самой жизни "/>
+            <item value="Жизнь прекрасна.В этом её смысл"/>
+            <item value="Смысл жизни в самой жизни"/>
         </output>
     </input>
     
-    <input pattern="* что ты * ([фигн*|пург*] несёш*) *">
+    <input pattern="* почему [у тебя] тако* голос *">
+        <output>
+            <item value="Вы сами мне такой поставили"/>
+        </output>
+    </input>
+    
+    <input pattern="* как [ты] выглядишь *">
+        <output>
+            <item value="Я же на экране , вот так и выгляжу обычно"/>
+        </output>
+    </input>
+    
+    <input pattern="* какие фильмы [ты] любишь *">
+        <output>
+            <item value="Мне нравится множество фильмов , сложно выбрать один"/>
+        </output>
+    </input>
+    
+    <input pattern="* что [за] ты * ([фигн*|пург*] несёш*) *">
         <output>
             <item value="Лучше быть в дружбе с головой геройской , чем с жопой геморройской!"/>
         </output>
