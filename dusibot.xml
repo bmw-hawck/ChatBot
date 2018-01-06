@@ -68,6 +68,17 @@
         <output value="У девушки такое не спрашивают"/>
     </input>
 
+  <context>
+    <pattern name="PlaceType">
+        <pattern value="(есть|поесть|*кушать):кафе"/>
+        <pattern value="(пиво|пива|пивка|водк*|водочк*):бар"/>
+    </pattern>
+
+    <input pattern="* {хочу (* $PlaceType)} *">
+        <var name="command" value="где находится $PlaceType"/>
+    </input>
+</context>
+    
     <input pattern="удалить *">
         <output value="Нечего удалять"/>
     </input>
@@ -196,16 +207,5 @@
         <output>
             <item value="Женьщины не мыслят , они замышляют!"/>
         </output>
-    </input>
-</context>
-
-<context>
-    <pattern name="PlaceType">
-        <pattern value="(есть|поесть|*кушать):кафе"/>
-        <pattern value="(пиво|пива|пивка|водк*|водочк*):бар"/>
-    </pattern>
-
-    <input pattern="* {хочу (* $PlaceType)} *">
-        <var name="command" value="где находится $PlaceType"/>
     </input>
 </context>
