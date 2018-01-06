@@ -64,8 +64,7 @@
     </input>
 
     <input pattern="* {сколько тебе (лет|год*)} *">
-        <output value="Задавайте вопросы по существу"/>
-        <output value="Я ведь программа , забыли?"/>
+        <output value="Я же программа, вы что забыли? У меня нет возраста."/>
         <output value="У девушки такое не спрашивают"/>
     </input>
 
@@ -112,10 +111,6 @@
             <item value="Без комментариев"/>
             <item value="Задавайте вопросы по существу"/>
         </output>
-    </input>
-
-    <input pattern="[[я] хочу | *кача*] (порн* | обои) *">
-        <output value="Это не входит в мои функции"/>
     </input>
     
     <input pattern="* что будешь (пит* | буха*) спирт или водку *">
@@ -201,5 +196,16 @@
         <output>
             <item value="Женьщины не мыслят , они замышляют!"/>
         </output>
+    </input>
+</context>
+
+<context>
+    <pattern name="PlaceType">
+        <pattern value="(есть|поесть|*кушать):кафе"/>
+        <pattern value="(пиво|пива|пивка|водк*|водочк*):бар"/>
+    </pattern>
+
+    <input pattern="* {хочу (* $PlaceType)} *">
+        <var name="command" value="где находится $PlaceType"/>
     </input>
 </context>
