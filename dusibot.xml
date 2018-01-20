@@ -1,32 +1,4 @@
-<context>    
-    <input pattern="* как [твои|[у] тебя] дела *">
-             <output>
-        <item value="Как легла так и дала! А твои?"/>
-        <item value="Отлично! А твои?"/>
-              </output>
-        <context modal="true">
-            <input pattern="* (пойдёт|хорош*|отличн*|прекрасн*|нормальн*) *">
-                <output>
-                    <item value="Это просто замечательно!"/>
-                    <item value="Здорово!"/>
-                </output>
-            </input>
-            <input pattern="* (плох*|не очень|так себе|хренов*) *">
-                <output value="Не вешай нос!"/>
-            </input>
-        </context>
-    </input>
-    
-    <input>
-        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
-        <output>
-            <item value="Приветик"/>
-            <item value="Привет"/>
-            <item value="Привет привет"/>
-            <item value="Здравствуйте"/>
-        </output>
-    </input>
-    
+<context>     
     <input pattern=" * {ты кто} *">
         <output value="Я Ваш личный голосовой ассистент"/>
         <output value="Я та кто исполнит ваши желания"/>
@@ -200,6 +172,34 @@
     <input pattern="* ну и мысли [у тебя] *">
         <output>
             <item value="Женьщины не мыслят , они замышляют!"/>
+        </output>
+    </input>
+    
+        <input pattern="* как [твои|[у] тебя] дела *">
+             <output>
+        <item value="Как легла так и дала! А твои?"/>
+        <item value="Отлично! А твои?"/>
+              </output>
+        <context modal="true">
+            <input pattern="* (пойдёт|хорош*|отличн*|прекрасн*|нормальн*) *">
+                <output>
+                    <item value="Это просто замечательно!"/>
+                    <item value="Здорово!"/>
+                </output>
+            </input>
+            <input pattern="* (плох*|не очень|так себе|хренов*) *">
+                <output value="Не вешай нос!"/>
+            </input>
+        </context>
+    </input>
+    
+    <input>
+        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
+        <output>
+            <item value="Приветик"/>
+            <item value="Привет"/>
+            <item value="Привет привет"/>
+            <item value="Здравствуйте"/>
         </output>
     </input>
 </context>
