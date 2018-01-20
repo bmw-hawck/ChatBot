@@ -51,8 +51,12 @@
         <output value="Спасибо"/>
     </input>
 
-    <input pattern="* (охрине*|обалде*|офиге*) *">
+    <input pattern="* (охрене*|обалде*|офиге*) *">
         <output value="Да ладно тебе!"/>
+    </input>
+    
+        <input pattern="* [мне] (поф*|похр*|поср*|наср*) *">
+        <output value="А мне нет!"/>
     </input>
         
     <input pattern="* спасибо *">
