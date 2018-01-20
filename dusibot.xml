@@ -28,10 +28,10 @@
     </input>
     
      <input pattern=" * {ты кто} *">
-	    <output>
-        <item value="Я Ваш личный голосовой ассистент"/>
-        <item value="Я та кто исполнит ваши желания"/>
-		</output>
+	  <output>
+            <item value="Я Ваш личный голосовой ассистент"/>
+            <item value="Я та кто исполнит ваши желания"/>
+	  </output>
     </input>
 
     <input>
@@ -49,13 +49,18 @@
         </output>
     </input>
 	
-     <input pattern="* поговор* хочу *">
-        <output value="Ну давай! Высказывайся!"/>
+     <input pattern="* [хочу] поговор* [хочу] *">
+        <output value="Ну давай, слушаю!"/>
 	<output value="Ну что же! Давай попробуем!"/>
     </input>
 	
      <input pattern="* (молодец|унмица|красава) *">
         <output value="Спасибо"/>
+    </input>
+	
+     <input pattern="* вообще *">
+        <output value="Ага,не в лапше ,а в макаронах"/>
+	<output value="А чего мне скромничать!"/>
     </input>
     
      <input pattern="* да [ты] что *">
