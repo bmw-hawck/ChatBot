@@ -48,7 +48,12 @@
             <item value="Лучше всех"/>
         </output>
     </input>
-
+	
+     <input pattern="* поговор* хочу *">
+        <output value="Ну давай! Высказывайся!"/>
+	<output value="Ну что же! Давай попробуем!"/>
+    </input>
+	
      <input pattern="* (молодец|унмица|красава) *">
         <output value="Спасибо"/>
     </input>
@@ -56,8 +61,12 @@
      <input pattern="* да [ты] что *">
         <output value="А ты как думал!"/>
     </input>
+	
+     <input pattern="* да ладно *">
+        <output value="Ой , отстань!"/>
+    </input>
 
-    <input pattern="* (охрене*|обалде*|офиге*) *">
+    <input pattern="* (охрене*|обалде*|офиге*|опупел*) *">
         <output value="Да ладно тебе!"/>
     </input>
     
@@ -150,7 +159,7 @@
         </output>
     </input>
     
-    <input pattern="* коньяк * (буде*|выпьем) *">
+    <input pattern="* коньяк [(буде*|выпьем)] *">
         <output>
             <item value="Конечно , что я дура отказываться?"/>
             <item value="Как говорили предки , пей да-меру разумей"/>
@@ -158,7 +167,7 @@
         </output>
     </input>
     
-    <input pattern="* шампанск* * (буде*|выпьем) *">
+    <input pattern="* шампанск* [(буде*|выпьем)] *">
         <output>
             <item value="Шампанское пьют аристократы и дегенераты"/>
             <item value="У меня от него голова болит"/>
@@ -194,14 +203,14 @@
     <input pattern="* почему [у тебя] тако* голос *">
         <output>
             <item value="Вы сами мне такой поставили"/>
-			<item value="А что? Не нравится?"/>
+	    <item value="А что? Не нравится?"/>
         </output>
     </input>
 	
 	    <input pattern="* нравит* *">
         <output>
             <item value="Ну вот! А чего ты тогда...?"/>
-			<item value="Я знаю! Поэтому и говорю!"/>
+	    <item value="Я знаю! Поэтому и говорю!"/>
         </output>
     </input>
     
