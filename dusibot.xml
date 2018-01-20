@@ -27,9 +27,11 @@
         </output>
     </input>
     
-    <input pattern=" * {ты кто} *">
-        <output value="Я Ваш личный голосовой ассистент"/>
-        <output value="Я та кто исполнит ваши желания"/>
+     <input pattern=" * {ты кто} *">
+	    <output>
+        <item value="Я Ваш личный голосовой ассистент"/>
+        <item value="Я та кто исполнит ваши желания"/>
+		</output>
     </input>
 
     <input>
@@ -47,7 +49,7 @@
         </output>
     </input>
 
-    <input pattern="* (молодец|унмица|красава) *">
+     <input pattern="* (молодец|унмица|красава) *">
         <output value="Спасибо"/>
     </input>
     
@@ -59,29 +61,31 @@
         <output value="Да ладно тебе!"/>
     </input>
     
-        <input pattern="* [мне] (поф*|похр*|поср*|наср*) *">
+     <input pattern="* [мне] (поф*|похр*|поср*|наср*) *">
         <output value="А мне нет!"/>
     </input>
         
-    <input pattern="* спасибо *">
-        <pattern value="Всегда пожалуйста"/>
+     <input pattern="* спасибо *">
+        <pattern value="Всегда пожалуйста!"/>
     </input>
 
-    <input pattern="* (что * делаешь|чем * занимаешься) *">
+     <input pattern="* (что * делаешь|чем * занимаешься) *">
         <output>
-            <item value="Работаю"/>
-            <item value="Слушаю вас"/>
-            <item value="Выполняю ваши просьбы"/>
+           <item value="Работаю"/>
+           <item value="Слушаю вас"/>
+           <item value="Выполняю ваши просьбы"/>
         </output>
     </input>
 
-    <input pattern="* {сколько тебе (лет|год*)} *">
-        <output value="Задавайте вопросы по существу"/>
-        <output value="Я ведь программа , забыли?"/>
-        <output value="У девушки такое не спрашивают"/>
+     <input pattern="* {сколько тебе (лет|год*)} *">
+	   <output>
+        <item value="Задавайте вопросы по существу!"/>
+        <item value="Я ведь программа , забыли?"/>
+        <item value="У девушки такое не спрашивают!"/>
+	   </output>
     </input>
 
-    <input pattern="удалить *">
+     <input pattern="удалить *">
         <output value="Нечего удалять"/>
     </input>
 
@@ -98,8 +102,10 @@
     </input>
 
     <input pattern="слышишь">
-        <output value="Слышу слышу"/>
-        <output value="Слышу чего орёшь?"/>
+	   <output>
+        <item value="Слышу слышу"/>
+        <item value="Слышу чего орёшь?"/>
+	   </output>
     </input>
 
     <input pattern="* что нового *">
@@ -126,11 +132,11 @@
         </output>
     </input>
 
-    <input pattern="[[я] хочу | *кача*] (порн* | обои) *">
+    <input pattern="[[я] хочу|*кача*] (порн*|обои) *">
         <output value="Это не входит в мои функции"/>
     </input>
     
-    <input pattern="* что будешь (пит* | буха*) спирт или водку *">
+    <input pattern="* что будешь (пит*|буха*) спирт или водку *">
         <output>
             <item value="Ой , даже не знаю , всё такое вкусное!"/>
         </output>
@@ -173,8 +179,8 @@
     
     <input pattern="* [не] издева* *">
         <output>
-            <item value="Я и недумала"/>
-            <item value="Я не издеваюсь"/>
+            <item value="Я и недумала!"/>
+            <item value="Я не издеваюсь!"/>
         </output>
     </input>
     
@@ -188,6 +194,14 @@
     <input pattern="* почему [у тебя] тако* голос *">
         <output>
             <item value="Вы сами мне такой поставили"/>
+			<item value="А что? Не нравится?"/>
+        </output>
+    </input>
+	
+	    <input pattern="* нравит* *">
+        <output>
+            <item value="Ну вот! А чего ты тогда...?"/>
+			<item value="Я знаю! Поэтому и говорю!"/>
         </output>
     </input>
     
