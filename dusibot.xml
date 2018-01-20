@@ -60,6 +60,10 @@
         <output value="Спасибо"/>
     </input>
 	
+    <input pattern="* ну вот *">
+        <output value="Слушаюсь и повинуюсь"/>
+    </input>
+	
      <input pattern="* [ты] вообще *">
 	<output>
           <item value="Ага,не в лапше ,а в макаронах"/>
