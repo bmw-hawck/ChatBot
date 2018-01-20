@@ -50,17 +50,21 @@
     </input>
 	
      <input pattern="* [хочу] поговор* [хочу] *">
-        <output value="Ну давай, слушаю!"/>
-	<output value="Ну что же! Давай попробуем!"/>
+	<output>
+         <item value="Ну давай, слушаю!"/>
+	 <item value="Ну что же, давай попробуем!"/>
+        </output>
     </input>
 	
      <input pattern="* (молодец|унмица|красава) *">
         <output value="Спасибо"/>
     </input>
 	
-     <input pattern="* вообще *">
-        <output value="Ага,не в лапше ,а в макаронах"/>
-	<output value="А чего мне скромничать!"/>
+     <input pattern="* [ты] вообще *">
+	</output>
+          <item value="Ага,не в лапше ,а в макаронах"/>
+	  <item value="А чего мне скромничать!"/>
+	</output>
     </input>
     
      <input pattern="* да [ты] что *">
@@ -92,11 +96,11 @@
     </input>
 
      <input pattern="* {сколько тебе (лет|год*)} *">
-	   <output>
-        <item value="Задавайте вопросы по существу!"/>
-        <item value="Я ведь программа , забыли?"/>
-        <item value="У девушки такое не спрашивают!"/>
-	   </output>
+	<output>
+           <item value="Задавайте вопросы по существу!"/>
+           <item value="Я ведь программа , забыли?"/>
+           <item value="У девушки такое не спрашивают!"/>
+	</output>
     </input>
 
      <input pattern="удалить *">
