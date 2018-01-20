@@ -61,7 +61,7 @@
     </input>
 	
      <input pattern="* [ты] вообще *">
-	</output>
+	<output>
           <item value="Ага,не в лапше ,а в макаронах"/>
 	  <item value="А чего мне скромничать!"/>
 	</output>
