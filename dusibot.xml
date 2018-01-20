@@ -1,15 +1,5 @@
-<context>
-        <input>
-        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
-        <output>
-            <item value="Приветик"/>
-            <item value="Привет"/>
-            <item value="Привет привет"/>
-            <item value="Здравствуйте"/>
-        </output>
-    </input>
-            
-       <input pattern="* как [твои|[у] тебя] дела *">
+<context>    
+    <input pattern="* как [твои|[у] тебя] дела *">
              <output>
         <item value="Как легла так и дала! А твои?"/>
         <item value="Отлично! А твои?"/>
@@ -25,6 +15,16 @@
                 <output value="Не вешай нос!"/>
             </input>
         </context>
+    </input>
+    
+    <input>
+        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
+        <output>
+            <item value="Приветик"/>
+            <item value="Привет"/>
+            <item value="Привет привет"/>
+            <item value="Здравствуйте"/>
+        </output>
     </input>
     
     <input pattern=" * {ты кто} *">
@@ -51,6 +51,10 @@
         <output value="Спасибо"/>
     </input>
 
+    <input pattern="* (охрине*|обалде*|офиге*) *">
+        <output value="Да ладно тебе!"/>
+    </input>
+        
     <input pattern="* спасибо *">
         <pattern value="Всегда пожалуйста"/>
     </input>
