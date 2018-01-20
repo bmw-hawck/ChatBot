@@ -201,7 +201,7 @@
     
     <input pattern="* издева* *">
         <output>
-            <item value="Я и недумала!"/>
+            <item value="Я и не думала!"/>
             <item value="Я не издеваюсь!"/>
         </output>
     </input>
