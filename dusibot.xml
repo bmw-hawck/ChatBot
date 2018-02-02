@@ -56,7 +56,7 @@
         </output>
     </input>
 	
-     <input pattern="* (молодец|унмица|красава) *">
+     <input pattern="* [ты] (молод*|унм*|крас*) *">
         <output value="Спасибо"/>
     </input>
 	
@@ -78,12 +78,15 @@
 	</output>
     </input>
     
-     <input pattern="* да [ты] что *">
+     <input pattern="* да {ты что} *">
         <output value="А ты как думал!"/>
     </input>
 	
-     <input pattern="* да ладно *">
-        <output value="Ой , отстань!"/>
+     <input pattern="* (да|что) ладно *">
+       <output>
+        <item value="Ой , отстань!"/>
+	<item value="Ой , не доставай меня!"/>
+       </output>
     </input>
 
     <input pattern="* (охрене*|обалде*|офиге*|опупел*) *">
