@@ -60,6 +60,10 @@
         <output value="Спасибо"/>
     </input>
 	
+    <input pattern="* [ты] (свободн*|гуля*|отвал*) *">
+        <output value="Наконец-то отдохну!"/>
+    </input>
+	
     <input pattern="* ну вот *">
         <output value="Слушаюсь и повинуюсь"/>
     </input>
@@ -89,7 +93,7 @@
        </output>
     </input>
 
-    <input pattern="* (охрене*|обалде*|офиге*|опупел*) *">
+    <input pattern="* [ты] (охрене*|обалде*|офиге*|опупел*) *">
         <output value="Да ладно тебе!"/>
     </input>
     
@@ -103,9 +107,9 @@
 
      <input pattern="* (что * делаешь|чем * занимаешься) *">
         <output>
-           <item value="Работаю"/>
-           <item value="Слушаю вас"/>
-           <item value="Выполняю ваши просьбы"/>
+           <item value="Работаю!"/>
+           <item value="Слушаю вас!"/>
+           <item value="Выполняю ваши просьбы!"/>
         </output>
     </input>
 
