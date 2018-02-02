@@ -49,7 +49,7 @@
         </output>
     </input>
 	
-     <input pattern="* [хочу] поговор* [хочу] *">
+     <input pattern="* {хоч* поговор*} *">
 	<output>
          <item value="Ну давай, слушаю!"/>
 	 <item value="Ну что же, давай попробуем!"/>
