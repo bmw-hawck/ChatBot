@@ -71,7 +71,7 @@
      <input pattern="* никак *">
 	<output>
            <item valuee="Ну вот,опять всё на меня взвалил!"/>
-	   <item value="Это что,мне за тебя думать?"/>
+	   <item value="Это что. Мне за тебя думать?"/>
 	</output>
     </input>
 	
