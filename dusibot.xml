@@ -64,6 +64,10 @@
         <output value="Ну не знаю?"/>
     </input>
 	
+     <input pattern="* [ты] уверена *">
+        <output value="Конечно"/>
+    </input>
+	
     <input pattern="* [ты] (свободн*|гуля*|отвал*) *">
         <output value="Наконец-то отдохну!"/>
     </input>
