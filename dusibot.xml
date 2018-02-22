@@ -59,6 +59,10 @@
      <input pattern="* [ты] (молод*|умн*|крас*) *">
         <output value="Спасибо"/>
     </input>
+
+     <input pattern="* [ну] и все же *">
+        <output value="Ну не знаю?"/>
+    </input>
 	
     <input pattern="* [ты] (свободн*|гуля*|отвал*) *">
         <output value="Наконец-то отдохну!"/>
