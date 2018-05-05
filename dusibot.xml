@@ -1,9 +1,51 @@
-<context>
+<context>    
+    <input pattern="* как [твои|[у] тебя] дела *">
+             <output>
+        <item value="Как легла так и дала! А твои?"/>
+        <item value="Отлично! А твои?"/>
+              </output>
+        <context modal="true">
+            <input pattern="* (пойдёт|хорош*|отличн*|прекрасн*|нормальн*) *">
+                <output>
+                    <item value="Это просто замечательно!"/>
+                    <item value="Здорово!"/>
+                </output>
+            </input>
+            <input pattern="* (плох*|не очень|так себе|хренов*) *">
+                <output value="Не вешай нос!"/>
+            </input>
+        </context>
+    </input>
+    
     <input>
-        <pattern value="(hi|hello)"/>
+        <pattern value="repeat([дуся|всем] (hi|hello|привет|здравствуй*) [дуся])"/>
         <output>
             <item value="Приветик"/>
+            <item value="Привет"/>
+            <item value="Привет привет"/>
             <item value="Здравствуйте"/>
+        </output>
+    </input>
+    
+     <input pattern=" * {ты кто} *">
+	  <output>
+            <item value="Я Ваш личный голосовой ассистент"/>
+            <item value="Я та кто исполнит ваши желания"/>
+	  </output>
+    </input>
+
+    <input>
+        <pattern value="* как ([твое] (самочувствие|здоровье)|поживаешь) *"/>
+        <pattern value="* как ты [себя] чувствуешь *"/>
+        <output>
+            <item value="Хорошо"/>
+            <item value="Отлично"/>
+            <item value="Нормально"/>
+            <item value="Неплохо"/>
+            <item value="Бывало и получше"/>
+            <item value="Да вроде ничего"/>
+            <item value="Как обычно хорошо"/>
+            <item value="Лучше всех"/>
         </output>
     </input>
 	
@@ -13,9 +55,25 @@
 	 <item value="Ну что же, давай попробуем!"/>
         </output>
     </input>
+	
+     <input pattern="* [ты] (молод*|умн*|крас*) *">
+        <output value="Спасибо"/>
+    </input>
 
      <input pattern="* [ну] и все же *">
         <output value="Ну не знаю?"/>
+    </input>
+	
+     <input pattern="* [ты] уверена *">
+        <output value="Конечно"/>
+    </input>
+	
+    <input pattern="* [ты] (свободн*|гуля*|отвал*) *">
+        <output value="Наконец-то отдохну!"/>
+    </input>
+	
+    <input pattern="* ну вот *">
+        <output value="Слушаюсь и повинуюсь"/>
     </input>
 	
      <input pattern="* никак *">
@@ -31,8 +89,12 @@
 	  <item value="А чего мне скромничать!"/>
 	</output>
     </input>
+    
+     <input pattern="* [да] {ты что} *">
+        <output value="А ты как думал!"/>
+    </input>
 	
-     <input pattern="* да ладно *">
+     <input pattern="* (да|что) ладно *">
        <output>
         <item value="Ой , отстань!"/>
 	<item value="Ой , не доставай меня!"/>
@@ -46,6 +108,34 @@
      <input pattern="* [мне] (поф*|похр*|поср*|наср*) *">
         <output value="А мне нет!"/>
     </input>
+        
+     <input pattern="* спасибо *">
+        <pattern value="Всегда пожалуйста!"/>
+    </input>
+
+     <input pattern="* (что * делаешь|чем * занимаешься) *">
+        <output>
+           <item value="Работаю!"/>
+           <item value="Слушаю вас!"/>
+           <item value="Выполняю ваши просьбы!"/>
+        </output>
+    </input>
+
+     <input pattern="* {сколько тебе (лет|год*)} *">
+	<output>
+           <item value="Задавайте вопросы по существу!"/>
+           <item value="Я ведь программа , забыли?"/>
+           <item value="У девушки такое не спрашивают!"/>
+	</output>
+    </input>
+
+     <input pattern="удалить *">
+        <output value="Нечего удалять"/>
+    </input>
+
+    <input pattern="repeat(дуся)">
+        <output value="Привет"/>
+    </input>
 
     <input pattern="* (люся|люси) *">
         <output>
@@ -55,14 +145,51 @@
         </output>
     </input>
 
+    <input pattern=" [хорошо] слышишь">
+	   <output>
+        <item value="Слышу слышу"/>
+        <item value="Слышу чего орёшь?"/>
+	   </output>
+    </input>
+
+    <input pattern="* что нового *">
+        <output value="Да всё как всегда"/>
+    </input>
+
     <input>
+        <pattern value="[* ты] молодец"/>
         <pattern value="будь здоров*"/>
         <output value="Спасибо"/>
     </input>
+
+    <input pattern="* {спасибо [тебе] [дуся]}">
+        <output value="Всегда пожалуйста"/>
+    </input>
+
+    <input pattern="* [ты] (дура*|туп*|дебил*|нагл*) *">
+        <output>
+            <item value="С твоей колокольни видней"/>
+            <item value="Я обиделась"/>
+            <item value="Сам такой"/>
+            <item value="Без комментариев"/>
+        </output>
+    </input>
+
+    <input pattern="[[я] хочу|*кача*] (порн*|обои) *">
+        <output value="Это не входит в мои функции"/>
+    </input>
     
-    <input pattern="* что {[буде*] (пит*|буха*)} {(спирт|коньяк) или водку} *">
+    <input pattern="* что {[буде*] (пит*|буха*)} {спирт или водку} *">
         <output>
             <item value="Ой , даже не знаю , всё такое вкусное!"/>
+        </output>
+    </input>
+    
+    <input pattern="* водк* * (буде*|выпьем) *">
+        <output>
+            <item value="Была бы она камнем , я бы её грызла!"/>
+            <item value="С хорошим человеком всегда можно "/>
+            <item value="А почему бы и нет?"/>
         </output>
     </input>
     
@@ -145,3 +272,4 @@
         </output>
     </input>
 </context>
+
